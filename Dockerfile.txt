@@ -1,0 +1,7 @@
+FROM nginx
+
+COPY web-page-script.py
+
+COPY list-cases.html /usr/share/nginx/html
+
+CMD ["./web-page-script.py"]
